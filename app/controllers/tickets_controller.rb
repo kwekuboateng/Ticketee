@@ -18,6 +18,7 @@ class TicketsController < ApplicationController
 	end
 
 	def show
+		@ticket = @project.tickets.build
 	end
 	
 	private
